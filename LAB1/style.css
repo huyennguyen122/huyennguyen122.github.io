@@ -1,0 +1,47 @@
+        /* menu */
+nav#menu ul {
+    background-color: hsl(117, 84%, 34%);
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav#menu li {
+    font-size: 24px;
+    line-height: 40px;
+    height: 40px;
+    display: inline-block;
+    padding: 20px;
+}
+
+nav#menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+        /* content */
+body {
+    margin: 0;
+    padding: 0;
+    background: #dfffb6;
+}
+
+section {
+    margin-left: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-left: 20px;
+}
+h3 {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+        /* footer */
+footer {
+    background: hsl(117, 84%, 34%);
+    color: #fff;
+    text-align: center;
+}
