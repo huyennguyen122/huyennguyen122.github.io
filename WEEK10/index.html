@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>EX02_Variable declaration and using message boxes and type converting</title>
+    <script language="javascript">
+        function Sum() {
+            var txta = document.getElementById("num1").value;
+            var txtb = document.getElementById("num2").value;
+
+            if(txta == null || txta =="" || isNaN(txta)){
+                alert("First input is formatted incorrectly.");
+            } else if(txtb == null || txtb =="" || isNaN(txtb)){
+                alert("Second input is formatted incorrectly.");
+            } else {
+                var result = parseFloat(txta) + parseFloat(txtb);
+                alert("Results:\n" + txta + " + " + txtb + " = " + result);
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Total</h2>
+    <form>
+        Enter first number: <input type="text" id="num1"/><br/><br/>
+        Enter second number: <input type="text" id="num2"/><br/><br/>
+        <input type="button" value="Result" onclick="Sum()"/>
+    </form>
+</body>
+</html>
