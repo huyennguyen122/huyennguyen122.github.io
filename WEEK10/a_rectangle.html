@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>EXTRA_a) Calculate the perimeter and area of rectangle</title>
+    <script language="javascript">2
+
+        var length = prompt("Enter the length of the rectangle:");
+        var width = prompt("Enter the width of the rectangle:");
+
+        if (length == null || length.trim() === "" || isNaN(length) ||
+            width == null || width.trim() === "" || isNaN(width)) {
+            document.write("<font color='red'>You must enter valid numbers for both length and width.</font>");
+        } 
+        else {
+            var perimeter = 2 * (parseFloat(length) + parseFloat(width));
+            var area = parseFloat(length) * parseFloat(width);
+
+            document.write("<h2>Rectangle Calculation</h2>");
+            document.write("Length: " + length + "<br>");
+            document.write("Width: " + width + "<br><br>");
+            document.write("<b>Perimeter:</b> " + perimeter + "<br>");
+            document.write("<b>Area:</b> " + area);
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>

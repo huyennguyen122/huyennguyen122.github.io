@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EXTRA_b) Calculate the perimeter and area of a circle</title>
+    <script>
+        function calcCircle() {
+            var radius = document.getElementById("radius").value;
+            var pi = 3.14;
+
+            if (radius == "" || isNaN(radius)) {
+                document.getElementById("result").innerHTML =
+                    "<font color='red'>Please enter a valid number for the radius.</font>";
+            } 
+            else {
+                var perimeter = 2 * pi * parseFloat(radius);
+                var area = pi * Math.pow(parseFloat(radius), 2);
+
+                document.getElementById("result").innerHTML =
+                    "<font color='blue'>Perimeter (Circumference): " + perimeter + "<br>Area: " + area + "</font>";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Circle: Perimeter and Area</h2>
+    <label>Radius: </label>
+    <input type="text" id="radius"><br><br>
+
+    <button onclick="calcCircle()">Calculate</button>
+    <p id="result"></p>
+</body>
+</html>
