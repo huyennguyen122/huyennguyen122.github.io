@@ -1,0 +1,53 @@
+<html>
+<body>
+
+<p id="demo"></p>
+<p id="id"></p>
+
+<script>
+//phần tử
+const id = document.getElementById("id");
+const demo  = document.getElementById("demo");
+
+// innerHTML
+demo.innerHTML = " TODAY ";
+demo.innerHTML += " 27/11";
+demo.innerHTML += "<br>";        
+id.innerHTML = "HELLO"
+
+// thay đổi 
+demo.style.color = "blue";
+demo.style.fontSize = "40px";
+id.style.fontWeight = "bold";
+demo.style.cursor = "pointer";
+id.style.cursor = "pointer";
+id.style.fontSize = "30px";
+// hover
+demo.onmouseover = function() {
+    demo.style.color = "green";
+}
+
+// onclick
+id.onclick = function() {
+    id.style.color = "red";
+    id.innerHTML = "YOU CLICKED ME";
+}
+
+// tạo ô nhập
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+
+</script>
+</body>
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  Name: <input type="text" name="fname">
+  <input type="submit" value="Submit">
+
+  
+</form>
+</html>
